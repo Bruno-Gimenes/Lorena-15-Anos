@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorena Gimenes - 15 Anos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="flores"></div>
+
+<section class="hero">
+  <div class="overlay">
+    <h3>Tudo para a Glória de Deus</h3>
+    <h1>Lorena Gimenes</h1>
+    <h2>Baile de Primavera</h2>
+    <p>23 de Outubro de 2026 • 20h30</p>
+    <button onclick="abrirConvite()">✨ Abrir Convite ✨</button>
+  </div>
+</section>
+
+<section id="conteudo" class="secao destaque-inicial">
+  <img src="imagens/lorena.jpeg" class="foto-lorena" alt="Lorena">
+
+  <div class="texto-inicial">
+    <h2>Uma Melodia para Celebrar uma Nova Primavera</h2>
+
+    <p>
+      Com alegria e gratidão a Deus, convido você para celebrar comigo
+      um dos momentos mais especiais da minha vida.
+    </p>
+
+    <div class="player-box">
+      <h2>🎵 Música do Convite</h2>
+      <audio controls loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+</section>
+
+<section class="secao">
+  <h2>Contagem Regressiva</h2>
+  <div id="contador"></div>
+</section>
+
+<section class="menu-opcoes">
+  <button onclick="mostrarSecao('dress')">👗 Dress Code</button>
+  <button onclick="mostrarSecao('local')">📍 Localização</button>
+  <button onclick="mostrarSecao('presentes')">🎁 Presentes</button>
+  <button onclick="mostrarSecao('confirmacao')">📱 Confirmar Presença</button>
+</section>
+
+<section id="dress" class="secao escondida">
+  <h2>Dress Code</h2>
+  <p><strong>Traje Social</strong></p>
+
+  <div class="dress-code-box">
+    <img src="imagens/dresscode-social.png" class="dress-code-img" alt="Dress Code Traje Social">
+  </div>
+</section>
+
+<section id="local" class="secao escondida">
+  <h2>Local do Evento</h2>
+
+  <div class="card-info">
+    <p>
+      📅 23/10/2026<br>
+      🕣 20h30<br><br>
+      📍 Castelo dos Vinhais<br>
+      R. Arnaldo Roque Brisque, 301<br>
+      Altos do Morumbi – Vinhedo/SP
+    </p>
+
+    <a class="botao" target="_blank"
+    href="https://maps.google.com/?q=R.+Arnaldo+Roque+Brisque,+301,+Vinhedo,+SP">
+      📍 Como Chegar
+    </a>
+  </div>
+
+  <div class="mapa">
+    <iframe
+      src="https://www.google.com/maps?q=R.+Arnaldo+Roque+Brisque,+301,+Vinhedo,+SP&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<section id="presentes" class="secao escondida">
+  <h2>Sugestão de Presentes</h2>
+
+  <div class="presentes-box">
+    <div class="presentes-lista">
+
+<h3>🎁 Sugestões de Presente</h3>
+
+      <p>Sua presença é o presente mais importante para mim, mas caso deseje me presentear, seguem algumas sugestões:</p>
+
+<div class="lista-presente">
+
+<p>👗 Vestidos tamanho P</p>
+
+<p>👚 Blusas tamanho P</p>
+
+<p>👖 Calças tamanho 36</p>
+
+<p>👠 Calçados tamanho 36/37</p>
+
+<p>🩴 Crocs</p>
+
+<p>💍 Acessórios femininos</p>
+
+<p>💄 Maquiagens
+<br>
+(Eudora, Boca Rosa, Fran by Franciny Ehlke,
+Ruby Rose e Océane)
+</p>
+
+<p>🧴 Skincare
+<br>
+(Principia, Creamy e La Roche-Posay)
+</p>
+
+<p>🎧 Fone de ouvido</p>
+
+<p>🛌 Pijamas</p>
+
+<p>🎻 Case para Violoncelo</p>
+
+<p>🎸 Case para Contrabaixo</p>
+
+<p style="margin-top:20px;">
+✨ Ou, se preferir, você pode me presentear através do Pix.
+</p>
+
+</div>
+
+    <div class="pix-box">
+      <h3>Pix</h3>
+      <p><strong>CPF:</strong> 461.284.698-25</p>
+
+      <img class="qr-pix" src="imagens/qrcode-pix.jpeg" alt="QR Code Pix">
+
+      <p class="aviso">
+        Escaneie o QR Code ou use a chave Pix acima.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="confirmacao" class="secao escondida">
+  <h2>Confirmar Presença</h2>
+
+  <div class="card-info">
+    <p>Sua confirmação será muito importante para nós.</p>
+
+    <a class="botao whatsapp"
+    href="https://wa.me/5516993058237?text=Confirmo%20minha%20presenca%20no%20Baile%20de%20Primavera%20da%20Lorena">
+      📱 Confirmar pelo WhatsApp
+    </a>
+  </div>
+</section>
+
+<section class="secao versiculo">
+  <p>
+    "Àquele que é capaz de fazer infinitamente mais do que tudo o que pedimos ou pensamos..."
+  </p>
+  <h3>Efésios 3:20</h3>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

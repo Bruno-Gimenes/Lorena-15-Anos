@@ -1,0 +1,272 @@
+body{
+  margin:0;
+  font-family: Georgia, serif;
+  background:#faf7f2;
+  color:#18375f;
+  overflow-x:hidden;
+}
+
+.hero{
+  min-height:100vh;
+  background-image:url("imagens/castelo.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.overlay{
+  background:rgba(255,255,255,0.76);
+  padding:38px;
+  border-radius:30px;
+  text-align:center;
+  max-width:90%;
+  box-shadow:0 8px 35px rgba(0,0,0,0.18);
+  border:2px solid rgba(176,138,60,0.45);
+}
+
+h1{
+  font-size:56px;
+  color:#b08a3c;
+  margin:10px 0;
+  font-weight:normal;
+}
+
+h2{
+  color:#b08a3c;
+  font-size:32px;
+}
+
+h3{
+  color:#b08a3c;
+}
+
+button,
+.botao{
+  display:inline-block;
+  margin:10px;
+  padding:15px 32px;
+  background:#b08a3c;
+  color:white;
+  border:none;
+  border-radius:35px;
+  text-decoration:none;
+  font-size:18px;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,0.18);
+  transition:0.2s;
+}
+
+button:hover,
+.botao:hover{
+  transform:scale(1.04);
+}
+
+.whatsapp{
+  background:#159947;
+}
+
+.secao{
+  max-width:1000px;
+  margin:auto;
+  padding:70px 20px;
+  text-align:center;
+}
+
+.destaque-inicial{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:45px;
+  flex-wrap:wrap;
+}
+
+.texto-inicial{
+  max-width:500px;
+}
+
+.foto-lorena{
+  width:90%;
+  max-width:430px;
+  padding:10px;
+  background:white;
+  border:2px solid #d4b06a;
+  border-radius:30px;
+  box-shadow:0 0 30px rgba(0,0,0,0.18);
+}
+
+.player-box{
+  margin-top:30px;
+  padding:24px;
+  background:white;
+  border:2px solid #d4b06a;
+  border-radius:25px;
+  box-shadow:0 0 25px rgba(0,0,0,0.12);
+}
+
+audio{
+  width:95%;
+  max-width:500px;
+}
+
+#contador{
+  margin-top:20px;
+}
+
+.contador-grid{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.contador-grid div{
+  background:white;
+  border:2px solid #d4b06a;
+  border-radius:20px;
+  padding:18px;
+  min-width:110px;
+  box-shadow:0 0 20px rgba(0,0,0,0.12);
+  font-size:38px;
+  color:#b08a3c;
+  font-weight:bold;
+}
+
+.contador-grid span{
+  display:block;
+  font-size:15px;
+  color:#18375f;
+  margin-top:5px;
+  font-weight:normal;
+}
+
+.menu-opcoes{
+  text-align:center;
+  padding:35px 20px;
+}
+
+.escondida{
+  display:none;
+}
+
+.dress-code-box{
+  max-width:950px;
+  margin:30px auto 0;
+  background:white;
+  border:2px solid #d4b06a;
+  border-radius:28px;
+  padding:14px;
+  box-shadow:0 0 30px rgba(0,0,0,0.15);
+}
+
+.dress-code-img{
+  width:100%;
+  border-radius:22px;
+  display:block;
+}
+
+.card-info{
+  max-width:760px;
+  margin:25px auto;
+  background:white;
+  border:2px solid #d4b06a;
+  border-radius:25px;
+  padding:30px;
+  box-shadow:0 0 25px rgba(0,0,0,0.12);
+}
+
+.mapa{
+  margin-top:35px;
+  border:3px solid #d4b06a;
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 0 25px rgba(0,0,0,0.15);
+}
+
+.mapa iframe{
+  width:100%;
+  height:350px;
+  border:0;
+}
+
+.lista-presente{
+    text-align:left;
+    max-width:400px;
+    margin:20px auto;
+}
+
+.lista-presente p{
+    background:#faf7f2;
+    border:1px solid #e4d4aa;
+    border-radius:12px;
+    padding:12px;
+    margin:10px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.qr-pix{
+  width:230px;
+  max-width:80%;
+  padding:12px;
+  background:white;
+  border:2px solid #d4b06a;
+  border-radius:20px;
+  box-shadow:0 0 20px rgba(0,0,0,0.15);
+}
+
+.aviso{
+  font-size:14px;
+}
+
+.versiculo{
+  font-style:italic;
+  font-size:22px;
+  color:#18375f;
+}
+
+.flower{
+  position:fixed;
+  top:-40px;
+  z-index:999;
+  pointer-events:none;
+  animation:cair linear forwards;
+  opacity:0.75;
+}
+
+@keyframes cair{
+  to{
+    transform:translateY(110vh) rotate(360deg);
+    opacity:0;
+  }
+}
+
+@media(max-width:600px){
+  h1{
+    font-size:38px;
+  }
+
+  h2{
+    font-size:26px;
+  }
+
+  .overlay{
+    padding:25px;
+  }
+
+  .contador-grid div{
+    font-size:30px;
+    min-width:80px;
+    padding:14px;
+  }
+
+  .mapa iframe{
+    height:280px;
+  }
+
+  .secao{
+    padding:55px 15px;
+  }
+}
